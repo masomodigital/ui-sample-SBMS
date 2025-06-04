@@ -71,6 +71,34 @@
     .button:hover {
       opacity: 0.85;
     }
+    .watch-video-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.watch-video-button:hover {
+  background-color: #c0392b;
+  transform: scale(1.02);
+}
+
+.video-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
   </style>
 </head>
 <body>
@@ -102,6 +130,18 @@
     <a href="https://script.google.com/macros/s/AKfycbw0xA2hr9kSek6el1Ri_j7kI4xOYVtETFcIJ2iPi4wBfW3CFOOrctggcSfNN0YZyMbnyw/exec" class="button black">CHECK SMS BALANCE</a>
     <a href="https://script.google.com/macros/s/AKfycbzU12QMqzIU15R_RXfuYjInLyt3PsHDq3ZuL3GWGcdsVAXdRT4A9oaIFA5yisXvF0_NVA/exec" class="button green">FEES STATEMENT</a>
     <a href="https://masomodigital.github.io/parent-portal/" class="button black">STUDENT FEE PAYMENT HISTORY</a>
+        <p style="text-align: center; font-size: 15px; color: #333; margin-top: 25px;">
+      Below is video to help you understand how the system works. Click the button to watch the video.
+    </p>
+
+    <a href="https://screenapp.io/app/#/shared/4wNQZsY7jZ" target="_blank" class="watch-video-button">
+      <svg xmlns="http://www.w3.org/2000/svg" class="video-icon" viewBox="0 0 24 24" fill="white">
+        <circle cx="12" cy="12" r="10" fill="#e74c3c"/>
+        <polygon points="10,8 16,12 10,16" fill="white"/>
+      </svg>
+      Click here to watch video
+    </a>
+
   </div>
 </body>
 </html>
